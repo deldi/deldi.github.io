@@ -1,0 +1,85 @@
+/* Fonts */
+@font-face {
+	font-family: 'Bison';
+	src: url('../fonts/bison_bold.ttf');
+}
+
+/* General */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #fff;
+	display: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* Clearfix*/
+.clearfix {
+	display: inline-block; 
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* Splash */
+.splash {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.splash__img {
+	width: 450px;
+	display: inline-block;
+}
+
+.splash__text {
+	display: inline-block;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.splash__img__src {
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Bison', sans-serif;
+	font-size: 100px;
+	color: #131313;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Bison', sans-serif;
+	font-size: 70px;
+	margin: 0;
+	line-height: 60px;
+	color: #2d2d2d;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Bison', sans-serif;
+	font-size: 50px;
+	line-height: 45px;
+	color: #686868;
+	text-transform: uppercase;
+}
+
+h3:first-of-type {
+	margin-top: 15px;
+}
