@@ -45,12 +45,10 @@ body {
 .splash {
 	width: 100%;
 	position: relative;
-	border: 1px solid blue;
 }
 
 .splash__img {
 	width: 100%;
-	border: 1px solid red;
 }
 
 .splash__img--desktop{
