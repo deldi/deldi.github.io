@@ -1,17 +1,58 @@
-<html>
+<!DOCTYPE html>
 <head>
-	<title>Deldi | Singer-Songwriter</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="../media/icon_deldi.ico"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153651171-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	  gtag('config', 'UA-153651171-1');
+	</script>
+
+	<meta charset="UTF-8">
+
+	<title>Deldi | Singer-Songwriter</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<link rel="icon" href="media/icon_deldi.ico"/>
+
+	<link rel="stylesheet" type="text/css" href="css/containers.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<div class="splash">
-		<div class="splash__img">
-			<img class="splash__img--desktop" src="../media/splash_desktop.jpg"/>
-			<img class="splash__img--mobile" src="../media/splash_mobile.jpg"/>
+<body ng-app="deldiApp">
+	<div ng-controller="NavbarCtrl" class="navbar">
+		<div class="navbar-width clearfix">
+			<div class=navbar__logo>
+				<a href="#/">
+					<img class="navbar__logo__autograph" src="media/autograph.png"/>
+				</a>
+			</div>
+			<div class="navbar__menu">
+				<a href="#/about">
+					<h1 class="navbar__menu__button">About</h1>
+				</a>
+				<a href="#/music">
+					<h1 class="navbar__menu__button">Music</h1>
+				</a>
+				<a href="#/blog">
+					<h1 class="navbar__menu__button">Blog</h1>
+				</a>
+				<a href="#/life">
+					<h1 class="navbar__menu__button">Life</h1>
+				</a>
+				<a href="#/contact">
+					<h1 class="navbar__menu__button">Contact</h1>
+				</a>
+			</div>
 		</div>
 	</div>
+
+	<div ng-view></div>
+
+	<script src="jquery-1.11.3.js"></script>
+	<script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

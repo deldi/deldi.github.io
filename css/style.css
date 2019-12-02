@@ -1,0 +1,327 @@
+/* General */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #eee;
+}
+
+/* Clearfix*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block; 
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* Navbar */
+.navbar {
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, .15);
+}
+
+.navbar__logo {
+	width: 10%;
+	float: left;
+	padding: 5px;
+}
+
+.navbar__logo__autograph {
+	width: 100%;
+}
+
+.navbar__logo__autograph:hover {
+	cursor: pointer;
+}
+
+.navbar__menu {
+	width: 90%;
+	float: left;
+	position: relative;
+	transform: translateY(50%);
+	padding-left: 15px;
+}
+
+.navbar__menu__button {
+	font-size: 18px;
+	color: #000;
+	display: inline-block;
+	padding: 5px 15px 8px 15px;
+	margin: 0 5px;
+	border-radius: 15px;
+}
+
+.navbar__menu__button:hover {
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+
+/* Banner */
+.banner {
+	width: 100%;
+	padding: 0;
+}
+
+.banner > .banner-width {
+	margin-bottom: -5px;
+}
+
+.banner__img {
+	width: 100%;
+	margin-top: 70px;
+}
+
+/* Follow */
+.follow {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.follow__banner {
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	padding: 5px 0;
+	position: relative;
+}
+
+.follow__banner__text {
+	display: inline-block;
+	font-size: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.follow__banner__icon {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.follow__banner__icon__img {
+	width: 40px;
+}
+
+.follow__banner__icon__img:hover {
+	width: 50px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+/* Body */
+.body {
+	width: 100%;
+}
+
+.body__x__title {
+	font-family: 'Bebas Neue';
+	color: #fff;
+	font-size: 60px;
+	text-shadow: 1.5px -1.5px 2px rgba(0, 0, 0, 0.15);
+	display: inline-block;
+}
+
+.body__x__link {
+	margin-left: 8px;
+	display: inline-block;
+	font-size: 18px;
+	color: dodgerblue;
+	text-shadow: 1.5px -1.5px 2px rgba(0, 0, 0, 0.15);
+	transition: all 0.5s ease;
+}
+
+.body__x__link:hover {
+	cursor: pointer;
+	transform: translateY(-5px);
+}
+
+.body__x__link:active {
+	transform: translateY(0px);
+}
+
+.body__main {
+	width: 800px;
+	margin-right: 15px;
+	float: left;
+}
+
+.body__main__blog {
+	width: 100%;
+	background-color: #fff;
+	padding: 70px 100px;
+	margin-top: -18px;
+}
+
+.body__main__blog__title {
+	margin-bottom: 30px;
+}
+
+.body__main__blog__text {
+	margin-bottom: 15px;
+}
+
+.body__main__blog__signature {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.body__main__blog__autograph {
+	width: 100px;
+	margin-bottom: 30px;
+}
+
+.body__main__blog__img {
+	width: 100%;
+}
+
+.body__main__blog__video {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 30px;
+}
+
+.body__main__blog__video__src {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.body__strip {
+	width: 385px;
+	float: left;
+}
+
+.body__strip__music, .body__strip__instagram {
+	width: 100%;
+	background-color: #fff;
+	margin-top: -18px;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.body__strip__music__item {
+	width: 100%;
+	position: relative;
+	transition: all 0.5s ease;
+}
+
+.body__strip__music__item:hover {
+	cursor: pointer;
+	background-color: #eee;
+}
+
+.body__strip__music__item__img {
+	width: 80px;
+	display: inline-block;
+}
+
+.body__strip__music__item__text {
+	display: inline-block;
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 10px;
+	transition: all 0.5s ease;
+}
+
+.body__strip__music__item:hover .body__strip__music__item__text {
+	color: dodgerblue;
+}
+
+.body__strip__music__item:active .body__strip__music__item__text {
+	color: #fff;
+}
+
+.body__strip__music__break {
+	width: 100%;
+	border: .5px solid #ddd;
+	margin: 5px 0;
+}
+
+
+/* Construction */
+.construction {
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.construction__profile {
+	width: 250px;
+	border-radius: 100%;
+	border: 10px solid #fff;
+	margin-bottom: 20px;
+}
+
+
+
+
+/* Splash */
+.splash {
+	width: 100%;
+	position: relative;
+	border: 1px solid red;
+	background: #40f;
+}
+
+.splash__img {
+	width: 100%;
+	border: 1px solid blue;
+}
+
+.splash__img--desktop{
+	width: 100%;
+	display: inline-block;
+}
+
+.splash__img--mobile{
+	width: 100%;
+	display: none;
+}
+
+/* Mobile view */
+@media(max-width: 700px) {
+	.splash__img--desktop {
+		display: none;
+	}
+
+	.splash__img--mobile {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Gravity';
+	src: url('../fonts/Gravity-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeue-Regular.otf') format('opentype'), url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+a {
+	text-decoration: none;
+	color: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Gravity';
+}
+
+p {
+	font-size: 18px;
+}
