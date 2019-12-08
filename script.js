@@ -7,7 +7,7 @@ app.config(function($routeProvider, $locationProvider) {
 	})
 	$routeProvider.when('/about', {
 		controller: 'ConstructionCtrl',
-		templateUrl: 'templates/construction.html'
+		templateUrl: 'templates/about.html'
 	})
 	$routeProvider.when('/music', {
 		controller: 'ConstructionCtrl',
@@ -22,8 +22,8 @@ app.config(function($routeProvider, $locationProvider) {
 		templateUrl: 'templates/construction.html'
 	})
 	$routeProvider.when('/contact', {
-		controller: 'ConstructionCtrl',
-		templateUrl: 'templates/construction.html'
+		controller: 'ContactCtrl',
+		templateUrl: 'templates/contact.html'
 	})
 	$routeProvider.otherwise('/');
 });
@@ -34,38 +34,41 @@ app.controller('NavbarCtrl', function($scope) {
 
 
 app.controller('HomeCtrl', function($scope) {
-	// angular.element(document).ready(function() {
-	// 	var facts = $('.life__card__fact');
-	// 	$('#dot-1').addClass('life__dot--active');
-	// 	for (var i = 1; i < facts.length; i++) {
-	// 		$(this).find(facts[i]).hide();
-	// 	}
+	angular.element(document).ready(function() {
+		var newsletterForm = $('#newsletter-form');
+		var newsletterFormUrl = 'https://script.google.com/macros/s/AKfycbzzuAbDaZgXpgip0hqJ5Ymmp9sG4OsPKjRRq0j-JhoCvhPQPp4/exec';
 
-	// 	// var photos = $('.life__photo');
-	// 	// for (var i = 0; i < photos.length; i++) {
-	// 	// 	console.log(photos);
-	// 	// 	$(this).find(photos[i]).hide();
-	// 	// }
+		$('#newsletter-submit').on('click', function(e) {
+			e.preventDefault();
+			var jqxhr = $.ajax({
+				url: newsletterFormUrl,
+			    method: 'GET',
+			    dataType: 'json',
+			    data: newsletterForm.serializeObject()
+			}).success(
+			    // do something
+			);
+		});
+	});
+});
 
-	// 	window.setInterval(function() {
-	// 		var currentFact = $('.life__card__fact:visible');
-	// 		var currentFactId = currentFact[0].id;
-	// 		var currentFactNum = currentFactId[currentFactId.length - 1];
-	// 		switch (currentFactNum) {
-	// 			case '1':
-	// 				$scope.showFact(2);
-	// 				break;
-	// 			case '2':
-	// 				$scope.showFact(3);
-	// 				break;
-	// 			case '3':
-	// 				$scope.showFact(4);
-	// 				break;
-	// 			default:
-	// 				$scope.showFact(1);
-	// 		}
-	// 	}, 8000);
-	// });
+app.controller('ContactCtrl', function($scope) {
+	angular.element(document).ready(function() {
+		var contactForm = $('#contact-form');
+		var contactFormUrl = 'https://script.google.com/macros/s/AKfycbwTkc-yguUvjNkot-l731m2WkMdOLReYOsZI3eZ9TTPwKyWiGk/exec';
+
+		$('#contact-submit').on('click', function(e) {
+			e.preventDefault();
+			var jqxhr = $.ajax({
+				url: contactFormUrl,
+				method: 'GET',
+				dataType: 'json',
+				data: contactForm.serializeObject()
+			}).success(
+				// do something
+			);
+		});
+	});
 });
 
 app.controller('ConstructionCtrl', function($scope) {

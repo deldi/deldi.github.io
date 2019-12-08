@@ -14,6 +14,10 @@ body {
 	background-color: #eee;
 }
 
+img {
+	display: block;
+}
+
 /* Clearfix*/
 .clearfix:after {
 	visibility: hidden;
@@ -90,16 +94,9 @@ body {
 .banner {
 	width: 100%;
 	padding: 0;
-}
-
-.banner > .banner-width {
-	margin-bottom: -5px;
-}
-
-.banner__img {
-	width: 100%;
 	margin-top: 70px;
 }
+
 
 /* Follow */
 .follow {
@@ -181,24 +178,6 @@ body {
 	margin-top: -18px;
 }
 
-.body__main__blog__title {
-	margin-bottom: 30px;
-}
-
-.body__main__blog__text {
-	margin-bottom: 15px;
-}
-
-.body__main__blog__signature {
-	margin-top: 30px;
-	margin-bottom: 15px;
-}
-
-.body__main__blog__autograph {
-	width: 100px;
-	margin-bottom: 30px;
-}
-
 .body__main__blog__img {
 	width: 100%;
 }
@@ -226,12 +205,17 @@ body {
 	float: left;
 }
 
-.body__strip__music, .body__strip__instagram {
+.body__strip__music, .body__strip__instagram, .body__strip__newsletter {
 	width: 100%;
 	background-color: #fff;
 	margin-top: -18px;
 	margin-bottom: 15px;
 	padding: 15px;
+	text-align: center;
+}
+
+.body__strip__newsletter {
+	padding: 50px;
 }
 
 .body__strip__music__item {
@@ -246,12 +230,16 @@ body {
 }
 
 .body__strip__music__item__img {
-	width: 80px;
-	display: inline-block;
+	width: 30%;
+	float: left;
 }
 
 .body__strip__music__item__text {
-	display: inline-block;
+	width: 70%;
+	float: left;
+}
+
+.body__strip__music__item__text__title {
 	font-size: 18px;
 	position: absolute;
 	top: 50%;
@@ -270,8 +258,70 @@ body {
 
 .body__strip__music__break {
 	width: 100%;
-	border: .5px solid #ddd;
+	height: 1px;
+	background-color: #ddd;
 	margin: 5px 0;
+}
+
+
+/* Double section (e.g. About, Contact) */
+.double {
+	width: 100%;
+	margin-top: 70px;
+}
+
+.double > .banner-width {
+	background-color: #fff;
+}
+
+.double__text {
+	width: 50%;
+	padding: 70px 100px;
+	float: left;
+}
+
+.double__img {
+	width: 50%;
+	float: left;
+}
+
+
+/* Contact */
+.contact__label {
+	margin-left: 15px;
+}
+
+.contact__input, .contact__textarea {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+
+.contact__textarea {
+	height: 150px;
+	resize: none;
+}
+
+.contact__button {
+	background-color: #000;
+	width: 100%;
+	padding: 10px 0px;
+	border: none;
+	border-radius: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+
+.contact__button:hover {
+	background-color: dodgerblue;
+	cursor: pointer;
+}
+
+.contact__button:active {
+	transform: translateY(5px);
 }
 
 
@@ -284,6 +334,7 @@ body {
 
 .construction__profile {
 	width: 250px;
+	margin: 0px auto;
 	border-radius: 100%;
 	border: 10px solid #fff;
 	margin-bottom: 20px;
