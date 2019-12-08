@@ -297,6 +297,7 @@ img {
 	padding: 5px;
 	border-radius: 15px;
 	border: 1px solid #ccc;
+	padding-left: 15px;
 }
 
 .contact__textarea {
