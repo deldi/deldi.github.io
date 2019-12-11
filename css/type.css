@@ -60,16 +60,16 @@ label {
 	margin-bottom: 30px;
 }
 
-.email {
+.link {
 	color: dodgerblue;
 }
 
-.email:hover {
+.link:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
 
-.email:active {
+.link:active {
 	color: #000;
 }
 
