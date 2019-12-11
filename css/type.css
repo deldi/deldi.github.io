@@ -72,3 +72,9 @@ label {
 .email:active {
 	color: #000;
 }
+
+.vertical-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}

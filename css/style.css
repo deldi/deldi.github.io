@@ -180,6 +180,8 @@ img {
 
 .body__main__blog__img {
 	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 30px;
 }
 
 .body__main__blog__video {
@@ -237,18 +239,21 @@ img {
 .body__strip__music__item__text {
 	width: 70%;
 	float: left;
+	text-align: left;
+	padding-left: 10px;
 }
 
 .body__strip__music__item__text__title {
 	font-size: 18px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 10px;
-	transition: all 0.5s ease;
 }
 
-.body__strip__music__item:hover .body__strip__music__item__text {
+.body__strip__music__item__text__sub {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: darkgray;
+}
+
+.body__strip__music__item:hover .body__strip__music__item__text__title, .body__strip__music__item:hover .body__strip__music__item__text__sub {
 	color: dodgerblue;
 }
 
