@@ -8,9 +8,9 @@
 	src: url('../fonts/BebasNeue-Regular.otf') format('opentype'), url('../fonts/BebasNeue-Regular.ttf') format('truetype');
 }
 
-a {
+a, a:visited {
 	text-decoration: none;
-	color: none;
+	color: #000;
 }
 
 h1, h2, h3, h4, h5, h6, p, label, input, textarea {
