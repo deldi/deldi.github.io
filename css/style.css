@@ -90,6 +90,31 @@ img {
 	transition: all 0.5s ease;
 }
 
+
+
+
+/* Blackout */
+.blackout {
+	width: 100%;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.blackout__video {
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+
 /* Banner */
 .banner {
 	width: 100%;
